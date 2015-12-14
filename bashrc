@@ -12,13 +12,22 @@ umask 022
 # disable coredumps by default
 ulimit -c 0
 
+# Use powerline 
+function _update_ps1() {
+    PS1="$(~/powerline-shell.py $? --cwd-only --colorize-hostname  2> /dev/null)"
+}
+
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
+
+
 # User specific aliases and functions
 
-module purge
-module load pgi
-
-module load qgis/2.6.1
+#module purge
+#module load pgi
 module load python/2.7.5_nopath
+module load qgis/2.6.1
 module load gdal/1.11.1
 
 
