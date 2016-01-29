@@ -1,8 +1,11 @@
 #
-# default .bashrc
-# 03/31/13
+# .bashrc
+# 01/28/2016
 #
 # Source global definitions
+
+export LANG=en_US.UTF-8
+
 if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
@@ -12,24 +15,16 @@ umask 022
 # disable coredumps by default
 ulimit -c 0
 
-# Use powerline 
-function _update_ps1() {
-    PS1="$(~/powerline-shell.py $? --cwd-only --colorize-hostname  2> /dev/null)"
-}
+# Use powerline, works but disabled because it works very slow
+#function _update_ps1() {
+#    PS1="$(~/powerline-shell.py $? --mode compatible --cwd-only --colorize-hostname 2> /dev/null)"
+#}
 
-if [ "$TERM" != "linux" ]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+#if [ "$TERM" != "linux" ]; then
+#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+#fi
 
-
-# User specific aliases and functions
-
-#module purge
-#module load pgi
-module load python/2.7.5_nopath
-module load qgis/2.6.1
-module load gdal/1.11.1
-
+# Aliases
 
 alias rm='rm -i'
 alias 759='cd /projectnb/landsat/projects/Colombia/images/007059'
@@ -50,5 +45,12 @@ alias qsbin='qsub -j y -V -b y'
 alias qst='qstat -u parevalo'
 alias inter='qsh -V -pe omp 2 -l h_rt=08:00:00'
 alias inter2='qsh -V -pe omp 2 -l h_rt=24:00:00'
-alias inter3='qsh -V -pe omp 16 -l h_rt=24:00:00'
+alias inter3='qsh -V -pe omp 4 -l h_rt=24:00:00'
+
+# Modules, fix with proper sourcing of .module
+
+module load pgi
+module load python/2.7.5_nopath
+module load qgis/2.6.1
+module load gdal/1.11.1
 
