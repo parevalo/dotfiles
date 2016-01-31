@@ -16,13 +16,13 @@ umask 022
 ulimit -c 0
 
 # Use powerline, works but disabled because it works very slow
-#function _update_ps1() {
-#    PS1="$(~/powerline-shell.py $? --mode compatible --cwd-only --colorize-hostname 2> /dev/null)"
-#}
+function _update_ps1() {
+    PS1="$(~/powerline-shell.py $? --mode compatible --cwd-only --colorize-hostname 2> /dev/null)"
+}
 
-#if [ "$TERM" != "linux" ]; then
-#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-#fi
+if [ "$TERM" != "linux" ]; then
+    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+fi
 
 # Aliases
 
