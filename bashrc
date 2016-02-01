@@ -15,9 +15,10 @@ umask 022
 # disable coredumps by default
 ulimit -c 0
 
-# Use powerline, works but disabled because it works very slow
+
+# Use powerline-shell
 function _update_ps1() {
-    PS1="$(~/powerline-shell.py $? --mode compatible --cwd-only --colorize-hostname 2> /dev/null)"
+    PS1="$(~/powerline-shell.py $? --mode compatible --shell bash --cwd-only --colorize-hostname 2> /dev/null)"
 }
 
 if [ "$TERM" != "linux" ]; then
