@@ -9,3 +9,4 @@ syntax on
 :set shiftwidth=4
 :set tabstop=4
 :set paste
+:set cc=80

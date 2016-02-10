@@ -16,14 +16,14 @@ umask 022
 ulimit -c 0
 
 
-# Use powerline-shell
-function _update_ps1() {
-    PS1="$(~/powerline-shell.py $? --mode compatible --shell bash --cwd-only --colorize-hostname 2> /dev/null)"
-}
-
-if [ "$TERM" != "linux" ]; then
-    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
-fi
+# Use powerline-shell, disabled because it is slow!
+#function _update_ps1() {
+#    PS1="$(~/powerline-shell.py $? --mode compatible --shell bash --cwd-only --colorize-hostname 2> /dev/null)"
+#}
+#
+#if [ "$TERM" != "linux" ]; then
+#    PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
+#fi
 
 # Aliases
 
@@ -54,4 +54,4 @@ module load pgi
 module load python/2.7.5_nopath
 module load qgis/2.6.1
 module load gdal/1.11.1
-
+module load vim
