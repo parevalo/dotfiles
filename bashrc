@@ -30,6 +30,8 @@ ulimit -c 0
 alias rm='rm -i'
 alias 759='cd /projectnb/landsat/projects/Colombia/images/007059'
 alias 859='cd /projectnb/landsat/projects/Colombia/images/008059'
+alias 758='cd /projectnb/landsat/projects/Colombia/images/007058'
+alias 859='cd /projectnb/landsat/projects/Colombia/images/008059'
 alias 659='cd /projectnb/landsat/projects/Colombia/images/006059'
 alias 660='cd /projectnb/landsat/projects/Colombia/images/006060'
 alias 760='cd /projectnb/landsat/projects/Colombia/images/007060'
@@ -55,3 +57,13 @@ module load python/2.7.5_nopath
 module load qgis/2.6.1
 module load gdal/1.11.1
 module load vim
+#module load llmv/3.6 Needed for numba, test!
+
+## FUNCTIONS
+
+function scn(){
+	path=00$1
+	row=0$2
+	
+	cd /projectnb/landsat/projects/Colombia/images/$path$row
+}
