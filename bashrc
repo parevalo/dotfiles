@@ -67,3 +67,8 @@ function scn(){
 	
 	cd /projectnb/landsat/projects/Colombia/images/$path$row
 }
+
+
+function jul () { 
+	date -d "$1-01-01 +$2 days -1 day" "+%Y%m%d";
+ }
