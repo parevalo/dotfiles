@@ -1,6 +1,6 @@
 #
 # .bashrc
-# 01/28/2016
+# 02/15/2016
 #
 # Source global definitions
 
@@ -50,25 +50,12 @@ alias inter='qsh -V -pe omp 2 -l h_rt=08:00:00'
 alias inter2='qsh -V -pe omp 2 -l h_rt=24:00:00'
 alias inter3='qsh -V -pe omp 4 -l h_rt=24:00:00'
 
-# Modules, fix with proper sourcing of .module
+# Modules 
 
-module load pgi
-module load python/2.7.5_nopath
-module load qgis/2.6.1
-module load gdal/1.11.1
-module load vim
-#module load llmv/3.6 Needed for numba, test!
+source ~/.module
 
 ## FUNCTIONS
 
-function scn(){
-	path=00$1
-	row=0$2
-	
-	cd /projectnb/landsat/projects/Colombia/images/$path$row
-}
-
-
-function jul () { 
-	date -d "$1-01-01 +$2 days -1 day" "+%Y%m%d";
- }
+if [ -f $HOME/.functions ]; then
+    source $HOME/.functions
+fi

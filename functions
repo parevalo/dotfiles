@@ -1,0 +1,15 @@
+#!/bin/bash
+
+# cd to any Landsat scene folder
+function scn(){
+    path=00$1
+    row=0$2
+
+    cd /projectnb/landsat/projects/Colombia/images/$path$row
+}
+
+# Calculate calendar date from DOY
+function jul () {
+    date -d "$1-01-01 +$2 days -1 day" "+%Y%m%d";
+}
+
