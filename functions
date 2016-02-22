@@ -1,8 +1,9 @@
-#!/bin/bash
+#!/bin/zsh
 
 # cd to any Landsat scene folder
 function scn(){
-    path=00$1
+    emulate -L sh
+	path=00$1
     row=0$2
 
     cd /projectnb/landsat/projects/Colombia/images/$path$row
@@ -10,6 +11,7 @@ function scn(){
 
 # Calculate calendar date from DOY
 function jul () {
-    date -d "$1-01-01 +$2 days -1 day" "+%Y%m%d";
+    emulate -L sh
+	date -d "$1-01-01 +$2 days -1 day" "+%Y%m%d";
 }
 
