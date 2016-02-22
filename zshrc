@@ -1,3 +1,4 @@
+#!/bin/zsh -l
 # Z shell - 02-15-2016
 
 # Lines configured by zsh-newuser-install
@@ -10,14 +11,16 @@ bindkey -e
 # The following lines were added by compinstall
 zstyle :compinstall filename '/usr3/graduate/parevalo/.zshrc'
 
-autoload -Uz compinit
+autoload -Uz compinit promptinit
 compinit
+promptinit
+
 # End of lines added by compinstall
 
 # Powerline shell
 function powerline_precmd() {
     PS1="$(~/powerline-shell.py $? --mode patched --shell zsh \
-		--colorize-hostname --cwd-mode fancy \
+		--colorize-hostname \
 		--cwd-max-depth 3  2> /dev/null)"
 }
 
