@@ -40,6 +40,7 @@ alias colombia='cd /projectnb/landsat/projects/Colombia'
 alias IDS='cd /projectnb/landsat/projects/IDS/ceholden'
 alias parevalo='cd /projectnb/landsat/users/parevalo'
 alias venv='source /projectnb/landsat/users/parevalo/yatsm5_venv/bin/activate'
+alias venv_dev='source /projectnb/landsat/users/parevalo/yatsm-dev_venv/bin/activate'
 alias ycode="cd /projectnb/landsat/users/parevalo/yatsm5_venv/lib/python2.7/site-packages/yatsm"
 alias ls='ls -h --color=auto'
 alias ll='ls -lh --color=auto'
