@@ -85,6 +85,7 @@ source $ZSH/oh-my-zsh.sh
 #
 
 # Aliases
+alias rm='rm -i'
 alias colombia='cd /projectnb/landsat/projects/Colombia'
 alias IDS='cd /projectnb/landsat/projects/IDS/ceholden'
 alias parevalo='cd /projectnb/landsat/users/parevalo'
