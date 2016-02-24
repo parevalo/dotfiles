@@ -11,6 +11,9 @@ ZSH_THEME="agnoster"
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 
+# Do not share history
+setopt nosharehistory
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -63,7 +66,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
-# export LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
