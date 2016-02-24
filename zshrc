@@ -60,7 +60,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/share/pkg/vim/7.4/install/bin:/share/pkg/gdal/1.11.1/install/bin:/share/pkg/gdal/1.11.1/install/python/scripts:/share/pkg/qgis/2.6.1/install/bin:/project/earth/packages/Python-2.7.5/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:."
+  export PATH="/share/pkg/vim/7.4/install/bin:/share/pkg/gdal/1.11.1/install/bin:/share/pkg/gdal/1.11.1/install/python/scripts:/share/pkg/qgis/2.6.1/install/bin:/project/earth/packages/Python-2.7.5/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:/usr3/graduate/parevalo/.local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -109,3 +109,6 @@ source ~/.module
 if [ -f $HOME/.functions ]; then
     source $HOME/.functions
 fi
+
+# For future powerline use
+#. /usr3/graduate/parevalo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
