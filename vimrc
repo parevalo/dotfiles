@@ -12,7 +12,9 @@ filetype plugin indent on
 :set number
 
 "Appearance
+:set noshowmode
+:set t_Co=256
 :set laststatus=2
 :set ttimeoutlen=50
-:let g:airline_theme='powerlineish'
+:let g:airline_theme='molokai'
 :let g:airline_powerline_fonts = 1
