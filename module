@@ -1,8 +1,8 @@
 ## Module additions for login
 
 module load pgi
-module load python/2.7.5_nopath
-module load qgis/2.6.1
-module load gdal/1.11.1
 module load vim/7.4
-#module load llvm/3.6 Test for numba
+# Next modules disabled to avoid conflict in conda, but needed for venv/QGIS
+#module load python/2.7.5_nopath
+#module load qgis/2.6.1
+#module load gdal/1.11.1
