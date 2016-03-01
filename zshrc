@@ -60,7 +60,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr3/graduate/parevalo/miniconda2/bin:/share/pkg/vim/7.4/install/bin:/share/pkg/gdal/1.11.1/install/bin:/share/pkg/gdal/1.11.1/install/python/scripts:/share/pkg/qgis/2.6.1/install/bin:/project/earth/packages/Python-2.7.5/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:/usr3/graduate/parevalo/.local/bin"
+  export PATH="/usr3/graduate/parevalo/miniconda2/bin:/share/pkg/vim/7.4/install/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:/usr3/graduate/parevalo/.local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -92,8 +92,8 @@ alias rm='rm -i'
 alias colombia='cd /projectnb/landsat/projects/Colombia'
 alias IDS='cd /projectnb/landsat/projects/IDS/ceholden'
 alias parevalo='cd /projectnb/landsat/users/parevalo'
-alias venv='source /projectnb/landsat/users/parevalo/yatsm5_venv/bin/activate'
-alias venv_dev='source /projectnb/landsat/users/parevalo/yatsm-dev_venv/bin/activate'
+alias pipvenv='source /projectnb/landsat/users/parevalo/yatsm5_venv/bin/activate'
+alias condavenv="source activate conda_venv"
 alias ycode="cd /projectnb/landsat/users/parevalo/yatsm5_venv/lib/python2.7/site-packages/yatsm"
 alias qsbin='qsub -j y -V -b y'
 alias qst='qstat -u parevalo'
