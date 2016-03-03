@@ -67,6 +67,7 @@ source $ZSH/oh-my-zsh.sh
 
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
+export LC_CTYPE=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
@@ -93,7 +94,7 @@ alias colombia='cd /projectnb/landsat/projects/Colombia'
 alias IDS='cd /projectnb/landsat/projects/IDS/ceholden'
 alias parevalo='cd /projectnb/landsat/users/parevalo'
 alias pipvenv='source /projectnb/landsat/users/parevalo/yatsm5_venv/bin/activate'
-alias condavenv="source activate conda_venv"
+alias condavenv="source activate conda_env"
 alias ycode="cd /projectnb/landsat/users/parevalo/yatsm5_venv/lib/python2.7/site-packages/yatsm"
 alias qsbin='qsub -j y -V -b y'
 alias qst='qstat -u parevalo'
