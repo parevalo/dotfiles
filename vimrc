@@ -8,6 +8,7 @@ filetype plugin indent on
 :set tabstop=4
 :set paste
 :set backspace=2
+:set expandtab
 :set cc=80
 :set number
 
