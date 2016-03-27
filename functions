@@ -14,3 +14,18 @@ function jul () {
 	date -d "$1-01-01 +$2 days -1 day" "+%Y%m%d";
 }
 
+# Get raster extend
+function gdal_extent() {
+    if [ -z "$1" ]; then
+        echo "Missing arguments. Syntax:"
+        echo "  gdal_extent <input_raster>"
+        return
+    fi
+    EXTENT=$(gdalinfo $1 |\
+        grep "Lower Left\|Upper Right" |\
+        sed "s/Lower Left  //g;s/Upper Right //g;s/).*//g" |\
+        tr "\n" " " |\
+        sed 's/ *$//g' |\
+        tr -d "[(]" | tr "," " ")
+    echo -n "$EXTENT"
+}
