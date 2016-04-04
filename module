@@ -2,7 +2,4 @@
 
 module load pgi
 module load vim/7.4
-# Next modules disabled to avoid conflict in conda, but needed for venv/QGIS
-#module load python/2.7.5_nopath
-#module load qgis/2.6.1
-#module load gdal/1.11.1
+module load qgis/2.6.1
