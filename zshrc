@@ -88,3 +88,5 @@ alias tun='ssh parevalo@geo.bu.edu -L'
 alias tpconf='gsettings set org.gnome.settings-daemon.peripherals.input-devices\
  hotplug-command "/home/paulo/touchpad_settings.sh"'
 
+# Enable powerline
+. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
