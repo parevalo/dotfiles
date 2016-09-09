@@ -25,6 +25,9 @@ sudo apt-get install pinta gimp
 sudo apt-get install vim
 sudo apt-get install r-base
 sudo apt-get install remmina
+sudo apt-get install zsh
+sudo apt install python-lxml python-bs4 #Required for the bing wallpaper thing
+sudo apt install python-pip
 
 
 # LATEX / TEX
@@ -44,3 +47,24 @@ chmod +x miniconda.sh
 ./miniconda.sh -b
 export PATH=$HOME/anaconda/bin:$PATH
 
+# REPOS
+if [ ! -d $HOME/Documents ]; then
+    mkdir $HOME/Documents
+fi
+cd $HOME/Documents
+
+git clone https://github.com/UtkarshGpta/bing-desktop-wallpaper-changer.git
+git clone https://github.com/powerline/fonts.git
+
+# SET ZSH AND STUFF
+./fonts/install.sh
+
+ln -sf ~/.zshrc ~/dotfiles/zshrc
+ln -sf ~/.vimrc ~/dotfiles/vimrc
+ln -sf ~/.bashrc ~/dotfiles/bashrc
+
+pip install --user powerline-status
+
+# Then manuall change config.json to use default_left
+
+chsh -s /bin/zsh
