@@ -55,6 +55,7 @@ cd $HOME/Documents
 
 git clone https://github.com/UtkarshGpta/bing-desktop-wallpaper-changer.git
 git clone https://github.com/powerline/fonts.git
+git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 # SET ZSH AND STUFF
 ./fonts/install.sh
@@ -63,8 +64,9 @@ ln -sf ~/.zshrc ~/dotfiles/zshrc
 ln -sf ~/.vimrc ~/dotfiles/vimrc
 ln -sf ~/.bashrc ~/dotfiles/bashrc
 
+# Get powerline for vim (could replace it with vim-airline)
 pip install --user powerline-status
 
-# Then manuall change config.json to use default_left
+# Reminder:Manuall change config.json to use default_left if using it for shell
 
 chsh -s /bin/zsh
