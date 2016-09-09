@@ -117,5 +117,5 @@ fi
 # added by Anaconda 2.2.0 installer
 export PATH="/home/paulo/anaconda/bin:$PATH"
 
-#Enable powerline
-. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+# Uncomment if I want to enable powerline
+#. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
