@@ -60,9 +60,9 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 # SET ZSH AND STUFF
 ./fonts/install.sh
 
-ln -sf ~/.zshrc ~/dotfiles/zshrc
-ln -sf ~/.vimrc ~/dotfiles/vimrc
-ln -sf ~/.bashrc ~/dotfiles/bashrc
+ln -sf ~/dotfiles/zshrc ~/.zshrc
+ln -sf ~/dotfiles/vimrc ~/.vimrc
+ln -sf ~/dotfiles/bashrc
 
 # Get powerline for vim (could replace it with vim-airline)
 pip install --user powerline-status
