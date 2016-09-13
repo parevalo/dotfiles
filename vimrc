@@ -9,6 +9,10 @@ set guifont=Ubuntu\ Mono\ derivative\ Powerline:10
 " set guifont=Ubuntu\ Mono
 let g:Powerline_symbols = 'fancy'
 
+"Syntax settings
+syntax on
+filetype indent plugin on
+
 "Text settings
 :set encoding=utf-8
 :set shiftwidth=4
