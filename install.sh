@@ -20,6 +20,7 @@ sudo apt-get update
 # REPO SOFTWARE
 sudo apt-get install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
 sudo apt-get install unity-tweak-tool
+sudo apt-get install indicator-multiload
 sudo apt-get install libgdal-dev qgis
 sudo apt-get install pinta gimp
 sudo apt-get install vim
