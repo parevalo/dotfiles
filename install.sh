@@ -46,7 +46,7 @@ wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O mini
 chmod +x miniconda.sh
 
 ./miniconda.sh -b
-export PATH=$HOME/anaconda/bin:$PATH
+export PATH=$HOME/miniconda2/bin:$PATH
 
 # REPOS
 if [ ! -d $HOME/Documents ]; then
