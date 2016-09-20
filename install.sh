@@ -63,7 +63,7 @@ git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
 
 ln -sf ~/dotfiles/zshrc ~/.zshrc
 ln -sf ~/dotfiles/vimrc ~/.vimrc
-ln -sf ~/dotfiles/bashrc
+ln -sf ~/dotfiles/bashrc ~/.bashrc
 
 # Get powerline for vim (could replace it with vim-airline)
 pip install --user powerline-status
