@@ -8,36 +8,38 @@
 #
 ###
 
-sudo apt-get install git
+sudo apt install git
 
 # SOURCES
 sudo add-apt-repository ppa:ubuntugis/ubuntugis-unstable
 sudo add-apt-repository ppa:webupd8team/atom
 sudo add-apt-repository ppa:numix/ppa
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
-sudo apt-get update 
+sudo add-apt-repository ppa:mystic-mirage/pycharm
+sudo apt update 
 
 # REPO SOFTWARE
-sudo apt-get install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
-sudo apt-get install unity-tweak-tool
-sudo apt-get install indicator-multiload
-sudo apt-get install libgdal-dev qgis
-sudo apt-get install pinta gimp
-sudo apt-get install vim
-sudo apt-get install r-base
-sudo apt-get install remmina
-sudo apt-get install zsh
+sudo apt install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
+sudo apt install unity-tweak-tool
+sudo apt install indicator-multiload
+sudo apt install libgdal-dev qgis
+sudo apt install pinta gimp
+sudo apt install vim
+sudo apt install r-base
+sudo apt install remmina
+sudo apt install pycharm-community
+sudo apt install zsh
 sudo apt install python-lxml python-bs4 #Required for the bing wallpaper thing
 sudo apt install python-pip
 
 
 # LATEX / TEX
-sudo apt-get install pandoc texlive-latex-recommended texlive-latex-extra
+sudo apt install pandoc texlive-latex-recommended texlive-latex-extra
 
 # GOOGLE
 wget http://dl.google.com/dl/earth/client/current/google-earth-stable_current_amd64.deb
 sudo dpkg -i google-earth*.deb
-sudo apt-get install -f
+sudo apt install -f
 
 
 # ANACONDA
