@@ -95,6 +95,7 @@ alias IDS='cd /projectnb/landsat/projects/IDS/ceholden'
 alias parevalo='cd /projectnb/landsat/users/parevalo'
 alias pipvenv='source /projectnb/landsat/users/parevalo/yatsm5_venv/bin/activate'
 alias condavenv="source activate conda_env"
+alias yqgis="source activate yatsm_qgis"
 alias ycode="cd /projectnb/landsat/users/parevalo/yatsm5_venv/lib/python2.7/site-packages/yatsm"
 alias qsbin='qsub -j y -V -b y'
 alias qst='qstat -u parevalo'
