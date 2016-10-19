@@ -44,11 +44,11 @@ sudo apt install -f
 
 # ANACONDA
 cd /tmp
-wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
+wget http://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh -O miniconda.sh
 chmod +x miniconda.sh
 
 ./miniconda.sh -b
-export PATH=$HOME/miniconda2/bin:$PATH
+export PATH=$HOME/miniconda3/bin:$PATH
 
 # REPOS
 if [ ! -d $HOME/Documents ]; then
