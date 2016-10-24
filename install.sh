@@ -16,6 +16,7 @@ sudo add-apt-repository ppa:webupd8team/atom
 sudo add-apt-repository ppa:numix/ppa
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository ppa:mystic-mirage/pycharm
+sudo add-apt-repository ppa:caffeine-developers/ppa
 sudo apt update 
 
 # REPO SOFTWARE
@@ -31,6 +32,7 @@ sudo apt install pycharm-community
 sudo apt install zsh
 sudo apt install python-lxml python-bs4 #Required for the bing wallpaper thing
 sudo apt install python-pip
+sudo apt install caffeine
 
 
 # LATEX / TEX
