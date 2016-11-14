@@ -3,4 +3,5 @@
 module load pgi
 module load vim/7.4
 module load git
-#module load qgis/2.6.1 #Interferes with gdal
+module load tmux/2.0
+
