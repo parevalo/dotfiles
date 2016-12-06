@@ -12,7 +12,7 @@ bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 
 # Do not share history
-setopt nosharehistory
+setopt no_share_history
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
