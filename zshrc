@@ -114,3 +114,10 @@ fi
 
 # For future powerline use
 #. /usr3/graduate/parevalo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
+# Override Agnoster prompt to avoid showing hostname 
+prompt_context() {
+  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
+    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
+  fi
+}
