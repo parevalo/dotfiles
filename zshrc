@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/usr3/graduate/parevalo/.oh-my-zsh
+export ZSH=/usr3/graduate/parevalo/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -60,7 +60,7 @@ plugins=(git)
 
 # User configuration
 
-  export PATH="/usr3/graduate/parevalo/miniconda2/bin:/share/pkg/vim/7.4/install/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:/usr3/graduate/parevalo/.local/bin"
+export PATH="/usr3/graduate/parevalo/miniconda2/bin:/share/pkg/vim/7.4/install/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:/usr3/graduate/parevalo/.local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
@@ -115,9 +115,6 @@ fi
 # For future powerline use
 #. /usr3/graduate/parevalo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
-# Override Agnoster prompt to avoid showing hostname 
-prompt_context() {
-  if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
-    prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
-  fi
-}
+# Override Agnoster prompt to avoid showing user@host
+prompt_context() {}
+
