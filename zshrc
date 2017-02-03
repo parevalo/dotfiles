@@ -117,4 +117,3 @@ fi
 
 # Override Agnoster prompt to avoid showing user@host
 prompt_context() {}
-
