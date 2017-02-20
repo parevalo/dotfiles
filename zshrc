@@ -60,7 +60,7 @@ plugins=(git)
 
 # User configuration
 
-export PATH="/usr3/graduate/parevalo/miniconda2/bin:/share/pkg/vim/7.4/install/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:/usr3/graduate/parevalo/.local/bin"
+export PATH="/projectnb/landsat/users/parevalo/miniconda3/bin:/share/pkg/vim/7.4/install/bin:/usr/local/apps/pgi-13.5/bin:/usr/java/default/jre/bin:/usr/java/default/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/sbin:/usr3/graduate/parevalo/bin:/usr3/graduate/parevalo/.local/bin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
