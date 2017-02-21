@@ -12,7 +12,7 @@ bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 
 # Do not share history
-setopt no_share_history
+setopt nosharehistory
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -117,3 +117,4 @@ fi
 
 # Override Agnoster prompt to avoid showing user@host
 prompt_context() {}
+
