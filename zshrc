@@ -101,8 +101,9 @@ alias qsbin='qsub -j y -V -b y'
 alias qst='qstat -u parevalo'
 alias inter='qsh -V -pe omp 2 -l h_rt=08:00:00'
 alias inter2='qsh -V -pe omp 2 -l h_rt=24:00:00'
-alias inter3='qsh -V -pe omp 4 -l h_rt=24:00:00'
-
+alias inter4='qsh -V -pe omp 4 -l h_rt=24:00:00'
+alias inter8='qsh -V -pe omp 8 -l h_rt=24:00:00'
+alias tsclass='cd /projectnb/modislc/users/rkstan/GE712'
 
 # Modules
 source ~/.module
