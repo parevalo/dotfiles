@@ -52,7 +52,7 @@ DEFAULT_USER="paulo"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git common-aliases)
+plugins=(git common-aliases shrink-path)
 
 # User configuration
 
@@ -83,11 +83,13 @@ export LANG=en_US.UTF-8
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias login='ssh -X geo.bu.edu -l parevalo'
+alias geo='ssh parevalo@geo.bu.edu'
 alias tun='ssh parevalo@geo.bu.edu -L'
 alias tpconf='gsettings set org.gnome.settings-daemon.peripherals.input-devices\
  hotplug-command "/home/dotfiles/touchpad_settings.sh"'
 alias windows='cd /media/paulo/785044BD504483BA'
+alias micromet='cd /media/paulo/785044BD504483BA/OneDrive/Spring_2017/GE503/project/'
 
 # Uncomment if I want to enable powerline
 #. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+
