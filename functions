@@ -29,3 +29,9 @@ function gdal_extent() {
         tr -d "[(]" | tr "," " ")
     echo -n "$EXTENT"
 }
+
+function abusers() {
+    qstat | awk 'NR > 2 { if ($5 == "r") print $4 " " $9 }' | sort | \
+        awk '{ sums[$1] += $2} END { for (i in sums) printf("%s %s\n", i, sums[i])}' | \
+        sort -k2 -n -r
+}
