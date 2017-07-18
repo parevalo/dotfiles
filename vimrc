@@ -9,7 +9,6 @@ filetype plugin indent on
 :set paste
 :set backspace=2
 :set expandtab
-:set cc=80
 :set number
 
 "Appearance
@@ -19,3 +18,8 @@ filetype plugin indent on
 :set ttimeoutlen=50
 :let g:airline_theme='molokai'
 :let g:airline_powerline_fonts = 1
+
+" Highlight text over 80chars/line
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
