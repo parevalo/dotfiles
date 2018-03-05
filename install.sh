@@ -17,9 +17,11 @@ sudo add-apt-repository ppa:numix/ppa
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository ppa:mystic-mirage/pycharm
 sudo add-apt-repository ppa:caffeine-developers/ppa
+sudo add-apt-repository -y ppa:rael-gc/rvm
 sudo apt update 
 
 # REPO SOFTWARE
+sudo apt install software-properties-common
 sudo apt install numix-gtk-theme numix-icon-theme numix-icon-theme-circle
 sudo apt install unity-tweak-tool
 sudo apt install indicator-multiload
@@ -33,6 +35,7 @@ sudo apt install zsh
 sudo apt install python-lxml python-bs4 #Required for the bing wallpaper thing
 sudo apt install python-pip
 sudo apt install caffeine
+sudo apt install rvm
 
 
 # LATEX / TEX
