@@ -93,3 +93,5 @@ alias micromet='cd /media/paulo/785044BD504483BA/OneDrive/Spring_2017/GE503/proj
 # Uncomment if I want to enable powerline
 #. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
 
+[[ -s "/etc/profile.d/rvm.sh" ]] && source "/etc/profile.d/rvm.sh"
+
