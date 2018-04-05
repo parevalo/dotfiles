@@ -12,12 +12,36 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " ----- IDE
-"Bundle 'scrooloose/nerdtree'
-"Plugin 'vim-syntastic/syntastic'
-"Bundle 'Valloric/YouCompleteMe'
+Bundle 'scrooloose/nerdtree'
+Plugin 'vim-syntastic/syntastic'
+Bundle 'Valloric/YouCompleteMe'
+Bundle 'SirVer/ultisnips'
 
 call vundle#end()
 filetype plugin indent on
+
+" ----- Plugin config
+
+" ----- Valloric/YouCompleteMe & SirVer/ultisnips 
+" See: http://stackoverflow.com/a/22253548
+" make YCM compatible with UltiSnips (using supertab)
+let g:SuperTabDefaultCompletionType = '<C-n>'
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+" Just 'python' so it finds venv/conda versions
+let g:ycm_python_binary_path = 'python'
+let g:ycm_collect_identifiers_from_tags_file = 1
+let g:ycm_seed_identifiers_with_syntax = 1
+let g:ycm_complete_in_comments = 1
+let g:ycm_complete_in_strings = 1
+let g:ycm_add_preview_to_completeopt = 0
+map <F3> :YcmCompleter GoTo<CR>
+
+" better key bindings for UltiSnipsExpandTrigger
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+
 
 "----- Powerline
 python3 from powerline.vim import setup as powerline_setup
