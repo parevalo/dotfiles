@@ -88,7 +88,10 @@ alias tun='ssh parevalo@geo.bu.edu -L'
 alias tpconf='gsettings set org.gnome.settings-daemon.peripherals.input-devices\
  hotplug-command "/home/dotfiles/touchpad_settings.sh"'
 alias windows='cd /media/paulo/785044BD504483BA'
-alias micromet='cd /media/paulo/785044BD504483BA/OneDrive/Spring_2017/GE503/project/'
+
+# Function to merge pdfs
+function pdfmerge() { gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH \
+    -sDEVICE=pdfwrite -sOutputFile=$@; }
 
 # Uncomment if I want to enable powerline
 #. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
