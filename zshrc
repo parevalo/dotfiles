@@ -90,8 +90,8 @@ alias tpconf='gsettings set org.gnome.settings-daemon.peripherals.input-devices\
 alias windows='cd /media/paulo/785044BD504483BA'
 
 # Function to merge pdfs
-function pdfmerge() { gs -q -sPAPERSIZE=letter -dNOPAUSE -dBATCH \
-    -sDEVICE=pdfwrite -sOutputFile=$@; }
+function pdfmerge() { gs -q -sPAPERSIZE=letter -dPDFSETTINGS=/ebook \
+    -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=$@; }
 
 # Function to extract pages from a PDF
 function pdf_extract()
