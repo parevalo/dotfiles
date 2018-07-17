@@ -84,6 +84,7 @@ export LANG=en_US.UTF-8
 #
 # Example aliases
 alias geo='ssh parevalo@geo.bu.edu'
+alias scc1='ssh parevalo@scc1.bu.edu'
 alias tun='ssh parevalo@geo.bu.edu -L'
 alias tpconf='gsettings set org.gnome.settings-daemon.peripherals.input-devices\
  hotplug-command "/home/dotfiles/touchpad_settings.sh"'
