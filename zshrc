@@ -11,9 +11,6 @@ ZSH_THEME="agnoster"
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 
-# Do not share history
-setopt nosharehistory
-
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -100,6 +97,8 @@ alias ycode="cd /projectnb/landsat/users/parevalo/yatsm5_venv/lib/python2.7/site
 alias qsbin='qsub -j y -V -b y'
 alias qst='qstat -u parevalo'
 alias inter='qsh -V -pe omp 2 -l h_rt=08:00:00'
+alias interhere='qrsh -pe omp 2 -l h_rt=08:00:00'
+alias interlong='qsh -V -pe omp 2 -l h_rt=48:00:00'
 alias inter2='qsh -V -pe omp 2 -l h_rt=24:00:00'
 alias inter4='qsh -V -pe omp 4 -l h_rt=24:00:00'
 alias inter8='qsh -V -pe omp 8 -l h_rt=24:00:00'
@@ -118,4 +117,7 @@ fi
 
 # Override Agnoster prompt to avoid showing user@host
 prompt_context() {}
+
+# Do not share history between terminal/panes
+unsetopt sharehistory
 
