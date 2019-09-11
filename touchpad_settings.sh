@@ -37,5 +37,5 @@ synclient RightButtonAreaLeft=4200
 
 #Others
 synclient PalmDetect=1
-synclient PalmMinWidth=6
-synclient PalmMinZ=40
+synclient PalmMinWidth=4
+synclient PalmMinZ=30
