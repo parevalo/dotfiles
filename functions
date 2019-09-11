@@ -1,0 +1,42 @@
+
+# Calculate calendar date from DOY
+ function jul () {
+     emulate -L sh
+     date -d "$1-01-01 +$2 days -1 day" "+%Y%m%d";
+ }
+ 
+ # Get raster extend
+ function gdal_extent() {
+     if [ -z "$1" ]; then
+         echo "Missing arguments. Syntax:"
+         echo "  gdal_extent <input_raster>"
+         return
+     fi
+     EXTENT=$(gdalinfo $1 |\
+         grep "Lower Left\|Upper Right" |\
+         sed "s/Lower Left  //g;s/Upper Right //g;s/).*//g" |\
+         tr "\n" " " |\
+         sed 's/ *$//g' |\
+         tr -d "[(]" | tr "," " ")
+     echo -n "$EXTENT"
+ }
+
+# Function to merge pdfs
+function pdfmerge() { gs -q -sPAPERSIZE=letter -dPDFSETTINGS=/ebook \
+    -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=$@; }
+
+# Function to extract pages from a PDF
+function pdf_extract()
+{
+    # this function uses 3 arguments:
+    #     $1 is the first page of the range to extract
+    #     $2 is the last page of the range to extract
+    #     $3 is the input file
+    #     output file will be named "inputfile_pXX-pYY.pdf"
+    gs -sDEVICE=pdfwrite -dNOPAUSE -dBATCH -dSAFER \
+       -dFirstPage=${1} \
+       -dLastPage=${2} \
+       -sOutputFile=${3%.pdf}_p${1}-p${2}.pdf \
+       ${3}
+}
+
