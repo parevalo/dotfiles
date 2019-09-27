@@ -11,6 +11,7 @@ ZSH_THEME="agnoster"
 bindkey "\e[1~" beginning-of-line
 bindkey "\e[4~" end-of-line
 
+
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -88,6 +89,7 @@ export LC_CTYPE=en_US.UTF-8
 # Aliases
 alias rm='rm -i'
 alias colombia='cd /projectnb/landsat/projects/Colombia'
+alias biomass='cd /projectnb/biomass2'
 alias IDS='cd /projectnb/landsat/projects/IDS/ceholden'
 alias parevalo='cd /projectnb/landsat/users/parevalo'
 alias pipvenv='source /projectnb/landsat/users/parevalo/yatsm5_venv/bin/activate'
@@ -103,6 +105,8 @@ alias inter2='qsh -V -pe omp 2 -l h_rt=24:00:00'
 alias inter4='qsh -V -pe omp 4 -l h_rt=24:00:00'
 alias inter8='qsh -V -pe omp 8 -l h_rt=24:00:00'
 alias tsclass='cd /projectnb/modislc/users/rkstan/GE712'
+alias diprs="cd /projectnb/diprs/2019/parevalo"
+alias mparevalo="cd /projectnb/measures/users/parevalo"
 
 # Modules
 source ~/.module
