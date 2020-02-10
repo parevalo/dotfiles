@@ -13,6 +13,7 @@ Plugin 'VundleVim/Vundle.vim'
 
 " ----- IDE
 Bundle 'scrooloose/nerdtree'
+Plugin 'vim-airline/vim-airline'
 Plugin 'vim-syntastic/syntastic'
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'SirVer/ultisnips'
@@ -43,17 +44,14 @@ let g:UltiSnipsJumpForwardTrigger = "<tab>"
 let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 
-"----- Powerline
-python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-
-
 " ----- Config and customizations
 set term=xterm-256color
 set guifont=Ubuntu\ Mono\ derivative\ Powerline:10
 " set guifont=Ubuntu\ Mono
 let g:Powerline_symbols = 'fancy'
+
+" ----- Vim airline
+let g:airline_powerline_fonts = 1
 
 "Syntax settings
 syntax on
