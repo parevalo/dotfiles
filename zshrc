@@ -85,8 +85,6 @@ export LANG=en_US.UTF-8
 # Example aliases
 alias geo='ssh parevalo@geo.bu.edu'
 alias tun='ssh parevalo@geo.bu.edu -L'
-alias tpconf='gsettings set org.gnome.settings-daemon.peripherals.input-devices\
- hotplug-command "/home/dotfiles/touchpad_settings.sh"'
 alias windows='cd /media/paulo/785044BD504483BA'
 
 # Function to merge pdfs
@@ -108,22 +106,20 @@ function pdf_extract()
        ${3}
 }
 
-# Uncomment if I want to enable powerline
-#. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
-
 [[ -s "/etc/profile.d/rvm.sh" ]] && source "/etc/profile.d/rvm.sh"
+
 
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/paulo/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/paulo/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/paulo/miniconda3/etc/profile.d/conda.sh" ]; then
-        . "/home/paulo/miniconda3/etc/profile.d/conda.sh"
+    if [ -f "/home/paulo/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/paulo/miniconda/etc/profile.d/conda.sh"
     else
-        export PATH="/home/paulo/miniconda3/bin:$PATH"
+        export PATH="/home/paulo/miniconda/bin:$PATH"
     fi
 fi
 unset __conda_setup
