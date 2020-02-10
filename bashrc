@@ -114,8 +114,22 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# added by Anaconda 2.2.0 installer
-export PATH="/home/paulo/anaconda/bin:$PATH"
 
 # Uncomment if I want to enable powerline
 #. /home/paulo/.local/lib/python2.7/site-packages/powerline/bindings/bash/powerline.sh
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/paulo/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/paulo/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/paulo/miniconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/paulo/miniconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
