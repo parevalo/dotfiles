@@ -14,6 +14,7 @@ sudo apt-add-repository ppa:remmina-ppa-team/remmina-next
 sudo add-apt-repository ppa:numix/ppa
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:rael-gc/rvm
+sudo add-apt-repository ppa:libreoffice/ppa
 sudo apt update 
 
 # REPO SOFTWARE
@@ -31,6 +32,7 @@ sudo apt install rvm
 # Extra packages are for thinkpads only
 sudo apt install tlp tlp-smapi-dkms acpi-call-dkms
 sudo apt install gdebi-core wget
+sudo apt install libreoffice
 
 
 # LATEX / TEX
