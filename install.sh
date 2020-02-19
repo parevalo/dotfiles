@@ -61,6 +61,10 @@ wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O mi
 chmod +x miniconda.sh
 ./miniconda.sh -b -p $HOME/miniconda
 
+# MISC CONFIG
+# Generate Latin American keyboard layout
+sudo locale-gen es_CO.UTF-8
+
 # REPOS
 if [ ! -d $HOME/repos ]; then
     mkdir $HOME/repos
