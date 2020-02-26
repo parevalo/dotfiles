@@ -15,6 +15,7 @@ sudo add-apt-repository ppa:numix/ppa
 sudo add-apt-repository ppa:otto-kesselgulasch/gimp
 sudo add-apt-repository -y ppa:rael-gc/rvm
 sudo add-apt-repository ppa:libreoffice/ppa
+sudo add-apt-repository ppa:linrunner/tlp
 sudo apt update 
 
 # REPO SOFTWARE
