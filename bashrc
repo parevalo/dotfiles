@@ -2,6 +2,11 @@
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
 
+# Launch Zsh
+if [ -t 1 ]; then
+    exec zsh
+fi
+
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -120,14 +125,14 @@ fi
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/paulo/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/parevalo/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/paulo/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/home/paulo/miniconda/etc/profile.d/conda.sh"
+    if [ -f "/home/parevalo/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/parevalo/miniconda/etc/profile.d/conda.sh"
     else
-        export PATH="/home/paulo/miniconda/bin:$PATH"
+        export PATH="/home/parevalo/miniconda/bin:$PATH"
     fi
 fi
 unset __conda_setup

@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/paulo/.oh-my-zsh
+export ZSH=/home/parevalo/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -8,7 +8,7 @@ export ZSH=/home/paulo/.oh-my-zsh
 ZSH_THEME="agnoster"
 
 # Set default user to hide it from prompt
-DEFAULT_USER="paulo"
+DEFAULT_USER="parevalo"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -112,14 +112,14 @@ function pdf_extract()
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/paulo/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/parevalo/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/paulo/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/home/paulo/miniconda/etc/profile.d/conda.sh"
+    if [ -f "/home/parevalo/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/parevalo/miniconda/etc/profile.d/conda.sh"
     else
-        export PATH="/home/paulo/miniconda/bin:$PATH"
+        export PATH="/home/parevalo/miniconda/bin:$PATH"
     fi
 fi
 unset __conda_setup
