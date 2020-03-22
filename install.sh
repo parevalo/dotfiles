@@ -30,10 +30,12 @@ sudo apt install r-base
 sudo apt install remmina
 sudo apt install zsh
 sudo apt install rvm
+sudo apt install libreoffice
+sudo apt install pavucontrol
+
 # Extra packages are for thinkpads only
 sudo apt install tlp tlp-smapi-dkms acpi-call-dkms
 sudo apt install gdebi-core wget
-sudo apt install libreoffice
 
 
 # LATEX / TEX
