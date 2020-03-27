@@ -64,6 +64,10 @@ source $ZSH/oh-my-zsh.sh
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
+# Fix home/end keys
+bindkey '^[[H' beginning-of-line
+bindkey '^[[F' end-of-line
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
@@ -85,7 +89,7 @@ export LANG=en_US.UTF-8
 # Example aliases
 alias geo='ssh parevalo@geo.bu.edu'
 alias tun='ssh parevalo@geo.bu.edu -L'
-alias windows='cd /media/paulo/785044BD504483BA'
+alias windows='cd /mnt/c'
 
 # Function to merge pdfs
 function pdfmerge() { gs -q -sPAPERSIZE=letter -dPDFSETTINGS=/ebook \
@@ -112,14 +116,14 @@ function pdf_extract()
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/parevalo/miniconda/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/parevalo/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/parevalo/miniconda/etc/profile.d/conda.sh" ]; then
-        . "/home/parevalo/miniconda/etc/profile.d/conda.sh"
+    if [ -f "/home/parevalo/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/home/parevalo/miniconda3/etc/profile.d/conda.sh"
     else
-        export PATH="/home/parevalo/miniconda/bin:$PATH"
+        export PATH="/home/parevalo/miniconda3/bin:$PATH"
     fi
 fi
 unset __conda_setup
