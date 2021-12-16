@@ -87,7 +87,7 @@ bindkey '^[[F' end-of-line
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-alias geo='ssh parevalo@geo.bu.edu'
+alias geo='ssh -X parevalo@geo.bu.edu'
 alias tun='ssh parevalo@geo.bu.edu -L'
 alias windows='cd /mnt/c'
 
