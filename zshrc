@@ -68,6 +68,12 @@ export LANG=en_US.UTF-8
 bindkey '^[[H' beginning-of-line
 bindkey '^[[F' end-of-line
 
+# Set dircolors
+eval `dircolors ~/projects/dircolors-solarized/dircolors.ansi-dark`
+
+# Assign same colors to tab completion (to avoid weird background colors)
+zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'

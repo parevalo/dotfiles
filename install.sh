@@ -27,6 +27,7 @@ cd $HOME/repos
 
 git clone https://github.com/powerline/fonts.git
 git clone git://github.com/robbyrussell/oh-my-zsh.git ~/.oh-my-zsh
+git clone https://github.com/seebi/dircolors-solarized.git
 
 # SET ZSH AND STUFF
 ./fonts/install.sh
