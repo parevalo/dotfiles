@@ -92,10 +92,14 @@ zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
 # For a full list of active aliases, run `alias`.
 #
-# Example aliases
 alias geo='ssh -X parevalo@geo.bu.edu'
 alias tun='ssh parevalo@geo.bu.edu -L'
 alias windows='cd /mnt/c'
+alias downloads='cd /mnt/c/Users/paulo/Downloads'
+alias classification='vim ~/projects/GLANCE/ccdcUtilities/classification.js'
+alias ccdc='vim ~/projects/GLANCE/ccdcUtilities/ccdc.js'
+alias inputs='vim ~/projects/GLANCE/ccdcUtilities/inputs.js'
+alias ui='vim ~/projects/GLANCE/ccdcUtilities/ui'
 
 # Function to merge pdfs
 function pdfmerge() { gs -q -sPAPERSIZE=letter -dPDFSETTINGS=/ebook \
