@@ -100,6 +100,7 @@ alias classification='vim ~/projects/GLANCE/ccdcUtilities/classification.js'
 alias ccdc='vim ~/projects/GLANCE/ccdcUtilities/ccdc.js'
 alias inputs='vim ~/projects/GLANCE/ccdcUtilities/inputs.js'
 alias ui='vim ~/projects/GLANCE/ccdcUtilities/ui'
+alias submit='vim ~/projects/GLANCE/glance/submit'
 
 # Function to merge pdfs
 function pdfmerge() { gs -q -sPAPERSIZE=letter -dPDFSETTINGS=/ebook \
@@ -138,4 +139,8 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
+
+# Ruby gems
+export GEM_HOME="$HOME/gems"
+export PATH="$HOME/gems/bin:$PATH"
 
